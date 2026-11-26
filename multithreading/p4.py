@@ -4,7 +4,9 @@ def greet():
        print("Hello from the thread1")
     
 def greet2():
+    time.sleep(5)
     print("Hello from the thread2")
+    
 
 def greet3():
    print("Hello from the thread3")
