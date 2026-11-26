@@ -1,13 +1,11 @@
 # multithreading with arguments
 import threading
 
-def greet(name):
+def greet(name,age):
        print("Hello", name)
-       print(name, "Hello")
+       print("this is age", age)
     
-t1=threading.Thread(target=greet, args=("Arav",))
+t1=threading.Thread(target=greet,args=("Arav",15) )
 
 t1.start()
 t1.join()
-
-
